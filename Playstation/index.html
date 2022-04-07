@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.jpg">
+    <script src="https:/kit.fontawesome.com/a10e5ec1fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.jpg" class="logo">
+
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Gamer Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+
+            <img src="img/menu.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> Dualshock 4</h2>
+                <h3>Wireles Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <a> ></a></button>
+            </div>
+
+            <div class="col-2">
+                <img src="img/controlegamerr.jpg" class="controller">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <div class="icones">
+            <a class="icon" href="iwww.nstagram.com"> <i class="fab fa-instagram"></i></a>
+            <a class="icon" href="www.facebook.com"> <i class="fab fa-facebook"></i></a>
+            <a class="icon" href="www.twitter.com"> <i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
